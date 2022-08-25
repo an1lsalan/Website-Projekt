@@ -1,6 +1,15 @@
-html{
-    font-size: 16px;
-}
+/*
+            Farben:
+
+    Blau:           #1F4E8C
+    Dunkel-Grau:    #3d3f45
+    Hell-Grau:      #e5e5e5
+    Rot:            #a62c21
+
+
+*/
+
+
 
 body{
     margin: 0%;
@@ -9,4 +18,12 @@ body{
 
 * {
     box-sizing: border-box;
+}
+
+/*  Navigationsleiste   */
+
+.header-nav{
+    width:100%;
+    height: 50px;
+    background-color: #3d3f45 ;
 }
