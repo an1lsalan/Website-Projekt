@@ -28,12 +28,46 @@ body{
     height: 50px;
     background-color: #3d3f45 ;
     position: relative;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-.header-nav >img{
+.header-nav > img{
     height: 30px;
     width: auto;
     position: absolute;
     left: 2rem;
     top: 0.55rem;
+}
+
+.header-nav > ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 1rem;
+    top: .8rem;
+}
+
+.header-nav > ul > li{
+    display: inline-block;
+}
+
+.header-nav > ul > li >a:link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-nav > ul > li >a:hover{
+    color: #e5e5e5;
+    text-decoration: none; 
+}
+
+.header-nav > ul > li >a:active{
+    color: #e5e5e5;
+    text-decoration: none; 
+}
+
+.header-nav > ul > li >a:visited{
+    color: #fff;
+    text-decoration: none;
 }
