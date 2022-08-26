@@ -32,7 +32,7 @@ body{
     font-size: 1.1rem;
 }
 
-.header-nav > img{
+.header-nav > a > img{
     height: 30px;
     width: auto;
     position: absolute;
@@ -45,11 +45,18 @@ body{
     padding: 0;
     position: absolute;
     right: 1rem;
-    top: .8rem;
+    height: 100%;
 }
 
 .header-nav > ul > li{
     display: inline-block;
+    height: 100%;
+    padding: 0 .2rem 0 .4rem;
+}
+
+.header-nav > ul > li > a{
+    display: inline-block;
+    margin-top: .8rem;
 }
 
 .header-nav > ul > li >a:link{
@@ -70,4 +77,8 @@ body{
 .header-nav > ul > li >a:visited{
     color: #fff;
     text-decoration: none;
+}
+
+.active{
+    background-color: #a62c21;
 }
