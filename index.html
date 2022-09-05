@@ -15,8 +15,8 @@
     <body>
 
         <!--Navigationsbar-->
-        <nav class="header-nav ">
-            <div class="container desktop-nav">
+        <nav id="header-nav">
+            <div class="container" id="desktop-nav">
                 <div class="row">
                     <div class="col-6">
 
@@ -36,7 +36,7 @@
                 </div>
             </div>
         
-            <div class="container mobile-nav">
+            <div class="container" id="mobile-nav">
                 <div class="row">
                     <div class="col-6">
 
@@ -44,18 +44,18 @@
                             <img src="src/img/webdesign-logo.png" alt="Das Logo von Webdesign MADESIMPLE">
                         </a>
 
-                        <div class="mobile-nav-dropdown clearfix">
+                        <div class="clearfix" id="mobile-nav-dropdown">
 
-                           <div class="mobile-nav-button"><span>&equiv;</span></div>
+                            <div id="mobile-nav-button"><span>&equiv;</span></div>
 
-                            <div class="mobile-nav-content clearfix">
+                                <div class="clearfix" id="mobile-nav-content">
 
-                                <ul>
-                                    <li class="active"><a href="index.html">Startseite</a></li>
-                                    <li><a href="leistungen.html">Leistungen</a></li>
-                                    <li><a href="kontakt.html">Kontakt</a></li>
-                                    <li><a href="impressum.html">Impressum</a></li>
-                                </ul>
+                                    <ul>
+                                        <li class="active"><a href="index.html">Startseite</a></li>
+                                        <li><a href="leistungen.html">Leistungen</a></li>
+                                        <li><a href="kontakt.html">Kontakt</a></li>
+                                        <li><a href="impressum.html">Impressum</a></li>
+                                    </ul>
 
                             </div> 
                         </div>
@@ -67,9 +67,36 @@
 
         <!-- Header-Banner-->
 
-        <header class="header-banner"></header>
+        <header id="header-banner"></header>
 
-        
+        <!-- Newsletter-Bereich -->
+
+            <section id="newsletter-bereich">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+
+                            <p id="nb-werbetext"><span class="wichtiger-text"> Melde dich jetzt für den Newsletter an und verpasse nichts mehr! </span>Wir schicken dir nur interessante Informationen. </p>
+
+                        </div>
+                        <div class="col-2">
+
+                            <form id="nb-form" action="index.html" method="post">
+
+                                <label class="screenreader" for="nb-email">Deine E-Mail</label>
+                                <input id="nb-email-input" id="nb-email" type="text" name="email" placeholder="Deine E-Mail Adresse" title="Hier ihre E-Mail">
+
+                                <button class="btn-typ-1" id="nb-btn" type="submit"> Jetzt anmelden</button>
+                            </form> 
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
 
     </body>
 

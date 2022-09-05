@@ -29,25 +29,47 @@ body{
     clear: both;
 }
 
+.active{
+    background-color: #a62c21;
+}
+
+
+.wichtiger-text{
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.screenreader{
+    display: none;
+}
+
+.btn-typ-1{
+    background-color: #a62c21;
+    border: 2px solid #a62c21;
+    color: #fff;
+    padding: .4rem .4rem;
+
+}
+
 /*  Navigationsleiste   */
 
-.header-nav{
+#header-nav{
     width:100%;
     height: 50px;
     background-color: #3d3f45 ;
     position: relative;
-    font-weight: bold;
     font-size: 1.1rem;
 }
 
-.header-nav a > img{
+#header-nav a > img{
     height: 30px;
     width: auto;
     float: left;
     margin-top: .55rem;
 }
 
-.header-nav  ul{
+#header-nav  ul{
     margin: 0;
     padding: 0;
     float: right;
@@ -55,45 +77,45 @@ body{
     height: 100%;
 }
 
-.header-nav  ul > li{
+#header-nav  ul > li{
     display: inline-block;
     height: 100%;
     padding: 0 .2rem 0 .4rem;
 }
 
-.header-nav  ul > li > a{
+#header-nav  ul > li > a{
     display: inline-block;
     margin-top: .8rem;
 }
 
-.header-nav  ul > li >a:link{
+#header-nav  ul > li >a:link{
     color: #fff;
     text-decoration: none;
 }
 
-.header-nav ul > li >a:hover{
+#header-nav ul > li >a:hover{
     color: #e5e5e5;
     text-decoration: none; 
 }
 
-.header-nav ul > li >a:active{
+#header-nav ul > li >a:active{
     color: #e5e5e5;
     text-decoration: none; 
 }
 
-.header-nav ul > li >a:visited{
+#header-nav ul > li >a:visited{
     color: #fff;
     text-decoration: none;
 }
 
-.header-nav .col-6 {
+#header-nav .col-6 {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.header-nav .container,
-.header-nav .row,
-.header-nav .col-6 {
+#header-nav .container,
+#header-nav .row,
+#header-nav .col-6 {
     height: 100%;
 }
 
@@ -104,7 +126,7 @@ body{
 }
 
 /* Navigationsleiste (Mobil)*/
-.mobile-nav-button{
+#mobile-nav-button{
     color: #fff;
     float: right;
     font-size: 2rem;
@@ -117,13 +139,13 @@ body{
 }
 
 
-.mobile-nav-button > span{
+#mobile-nav-button > span{
     position: absolute;
     bottom: -2px;
     left: 7px;
 }
 
-.mobile-nav-content >ul >li{
+#mobile-nav-content >ul >li{
     display: block;
     background-color: #3d3f45;
     height: 50px;
@@ -131,34 +153,38 @@ body{
     text-align: center;
 }
 
-.mobile-nav-dropdown{
+#mobile-nav-dropdown{
     position: relative;
-    display: inline-block;
+    display: block;
     float: right;
 }
 
-.mobile-nav-content{
+#mobile-nav-content{
     position: absolute;
     right: 0;
     top: 50px;
     display: none;
 }
 
-.mobile-nav-dropdown:hover > .mobile-nav-content{
+#mobile-nav-dropdown:hover > #mobile-nav-content{
     display: block;
 }
 
-.mobile-nav{
+#mobile-nav-content >ul > .active{
+    background-color: #a62c21;
+}
+
+#mobile-nav{
     display: none;
 }
 
 @media (max-width: 768px) {
 
-    .desktop-nav{
+    #desktop-nav{
         display: none;
     }
 
-    .mobile-nav{
+    #mobile-nav{
         display: block;;
     }
 
@@ -166,7 +192,7 @@ body{
 
 /* Header-Banner */
  
-.header-banner{
+#header-banner{
     width: 100%;
     height: 0;
     padding-top: 20.83%;
@@ -174,7 +200,7 @@ body{
     background-size: contain;
 }
 
-.header-banner-klein{
+#header-banner-klein{
 
     width: 100%;
     height: 0;
@@ -184,7 +210,84 @@ body{
 
 }
 
+/* Newsletter-Bereich*/
 
+#newsletter-bereich{
+    width: 100%;
+    background-color: #3d3f45;
+}
+
+#nb-werbetext{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#nb-form{
+    margin-top: .7rem;
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+#nb-email-input{
+    width: 78%;
+    height: 35px;
+    border: 2px solid #fff;
+    padding: .4rem;
+}
+
+#nb-btn{
+    height: 35px;
+
+}
+
+
+
+@media (max-width: 1822px) {
+    
+    #nb-email-input{
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 1358px) {
+    
+    #nb-email-input{
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    #nb-btn{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #nb-werbetext{
+        display: none;
+    }
+    
+    #nb-form{
+        margin-top: 0;
+    }
+
+    #newsletter-bereich .col-4{
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    #nb-email-input{
+        height: 25px;
+    }
+    #nb-btn{
+        height: 25px;
+    }
+    
+}
 /* Grid-System (Sichtbarkeit)*/
 
 /*.border, .border *{
@@ -229,6 +332,7 @@ p{
 .col-1{width: 16.666%;}
 .col-2{width: 33.333%;}
 .col-3{width: 50%;}
+.col-4{width: 66.666%;}
 .col-6{width: 100%;}
 
 
@@ -251,6 +355,7 @@ p{
     .col-1{width: 50%;}
     .col-2{width: 100%;}
     .col-3{width: 100%;}
+    .col-4{width: 100%;}
 }
 
 @media (max-width: 480px) {
@@ -258,5 +363,5 @@ p{
     .col-1{width: 100%;}
     .col-2{width: 100%;}
     .col-3{width: 100%;}
-
+    .col-4{width: 100%;}
 }
