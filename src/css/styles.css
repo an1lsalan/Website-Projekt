@@ -3,7 +3,7 @@
 
     Blau:           #1F4E8C
     Dunkel-Grau:    #3d3f45
-    Hell-Grau:      #e5e5e5
+    Hell-Grau:      #f0f0f0
     Rot:            #a62c21
 
 
@@ -11,7 +11,7 @@
 :root {
     --blau: #1F4E8C;
     --dunkelGrau: #3d3f45;
-    --hellGrau: #e5e5e5;
+    --hellGrau: #f0f0f0;
     --rot: #a62c21;
 }
 
@@ -518,6 +518,38 @@ section{
         width: 90%;
     }
 }
+
+
+/* Service-Bereich*/
+
+#service-bereich{
+    background-color: #f0f0f0;
+    color: #000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.service-box{
+    background-color: #f0f0f0;
+    text-align: center;
+    width: 80%;
+}
+
+.service-box > h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#service-bereich .row:nth-of-type(2) > .col-2:first-of-type > .service-box{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#service-bereich .row:nth-of-type(2) > .col-2:nth-of-type(2) > .service-box{
+    margin-left:auto ;
+    margin-right: auto;
+}
+
 
 /* Grid-System (Sichtbarkeit)*/
 
