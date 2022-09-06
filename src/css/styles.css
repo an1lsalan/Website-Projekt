@@ -474,6 +474,51 @@ section{
 
 }
 
+
+/* Video-Bereich */
+
+#video-bereich{
+    background-color: var(--dunkelGrau);
+    color: #fff;
+
+}
+
+#video-bereich video{
+    width: 35%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (max-width: 1440px) {
+    
+    #video-bereich video{
+        width: 45%;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+    #video-bereich video{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #video-bereich video{
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    #video-bereich video{
+        width: 90%;
+    }
+}
+
 /* Grid-System (Sichtbarkeit)*/
 
 /*.border, .border *{
