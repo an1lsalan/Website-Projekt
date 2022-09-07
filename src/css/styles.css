@@ -640,6 +640,53 @@ section{
     }
 }
 
+/*Footer*/
+
+#footer{
+    background-color: var(--dunkelGrau);
+    height: 2.8rem;
+    color: #fff;
+}
+
+#footer-nav{
+    display: block;
+    float: right;
+}
+
+#footer-nav a{
+    text-decoration: none;
+}
+
+#footer-nav a:link{
+    color: #fff;
+}
+
+
+#footer-nav a:link{
+    color: #fff;
+
+}
+
+#footer-nav a:visited{
+    color: #fff;
+}
+
+#footer-nav a:active{
+    color: #fff;
+}
+
+#footer:hover{
+    color: var(--hellGrau);
+    
+}
+
+@media (max-width: 550px) {
+    
+    #footer span{
+        display: none;
+    }
+}
+
 /* Grid-System (Sichtbarkeit)*/
 
 /*.border, .border *{
