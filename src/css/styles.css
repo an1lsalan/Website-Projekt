@@ -550,6 +550,45 @@ section{
     margin-right: auto;
 }
 
+.service-icon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#günstig-icon{
+    background:var(--dunkelGrau) url("./../img/services-sprite.png") no-repeat 0px 0;
+}
+
+#schnell-icon{
+    background:var(--dunkelGrau) url("./../img/services-sprite.png") no-repeat -120px 0;
+}
+
+#modern-icon{
+    background:var(--dunkelGrau) url("./../img/services-sprite.png") no-repeat -240px 0;
+}
+
+@media (max-width: 768px) {
+    
+    #service-bereich .row:nth-of-type(2) > .col-2:first-of-type > .service-box{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #service-bereich .row:nth-of-type(2) > .col-2:nth-of-type(3) > .service-box{
+        margin-left:auto ;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .service-box{
+        width: 100%;
+    }
+}
 
 /* Grid-System (Sichtbarkeit)*/
 
