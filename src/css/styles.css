@@ -383,6 +383,43 @@ section{
 }
 
 
+/* Animiertes Logo */
+
+@keyframes logoAnimation {
+    0% {transform: rotateZ(0deg);}
+    11.111% {transform: rotateZ(0deg);}
+    22.222% {transform: rotateZ(90deg);}
+    33.333% {transform: rotateZ(90deg);}
+    44.444% {transform: rotateZ(180deg);}
+    55.555% {transform: rotateZ(180deg);}
+    66.666% {transform: rotateZ(270deg);}
+    77.777% {transform: rotateZ(270deg);}
+    88.888% {transform: rotateZ(360deg);}
+    100% {transform: rotateZ(360deg);}
+}
+
+
+#animiertes-logo{
+    height: 150px;
+    width: 150px;
+    background-color: var(--dunkelGrau);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    padding: 25px;
+
+}
+
+#animiertes-logo > img{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto; 
+    animation: logoAnimation 5s ease-in-out infinite alternate;   
+}
+
 /* Leistungen-Bereich*/
 
 .leistungs-teaser-box{
@@ -786,7 +823,7 @@ section{
     .flex-container{
         display: flex;
         width: 80%;
-        margin-left: auto;
+        margin-left:   auto;
         margin-right: auto;
         justify-content: space-around;
         align-items: center ;
@@ -912,6 +949,15 @@ section{
     }
 }
 
+
+/* Impressum-Seite */
+
+.impressum-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
 
 
 /* Grid-System (Sichtbarkeit)*/
