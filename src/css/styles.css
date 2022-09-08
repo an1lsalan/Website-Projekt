@@ -854,6 +854,66 @@ section{
     font-weight: normal;
 }
 
+
+/* Kontakt-Seite*/
+
+#kontakt-formular input,
+#kontakt-formular textarea{
+    width: 100%;
+    border: 2px solid var(--dunkelGrau);
+    padding:.5rem;
+    font-size: 1rem;
+    font-family: 'Open Sans','Lato', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+#kontakt-formular textarea{
+    height: 100px;
+}
+
+#kontakt-formular input:hover,
+#kontakt-formular input:focus,
+#kontakt-formular textarea:hover,
+#kontakt-formular textarea:focus,
+#kontakt-formular button:hover{
+    border: 2px solid var(--rot);
+}
+
+.btn-type-3{
+    border: 2px solid var(--dunkelGrau);
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--dunkelGrau);
+    width: 150px;
+    height: 39px ;
+}
+
+#kontakt-formular{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 1366px) {
+    #kontakt-formular{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #kontakt-formular{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #kontakt-formular button{
+        width: 100%;
+    }
+}
+
+
+
 /* Grid-System (Sichtbarkeit)*/
 
 /*.border, .border *{
