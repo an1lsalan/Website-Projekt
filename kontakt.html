@@ -67,6 +67,51 @@
 
         <header id="header-banner-klein"></header>
 
+        <!-- Kontakt-Bereich-->
+
+        <section id="kontakt-bereich">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <header class="intro-container">
+                            <h2>Kontakt</h2>
+                            <p>Wenn Sie Fragen zu unseren Leistungen haben, können Sie uns gerne kontaktieren.</p>
+                        </header>
+                    </div>
+                </div>
+                <form id="kontakt-formular" action="kontakt.html" method="post">
+                    <div class="row">
+                    <div class="col-3">
+                        <label for="vorname" class="screenreader">Vorname</label>
+                        <input id="vorname" type="text" name="vorname" placeholder="Name" required>
+                    </div>
+                    <div class="col-3">
+                        <label for="nachname" class="screenreader">Nachname</label>
+                        <input id="nachname" type="text" name="nachname" placeholder="Nachname" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="email" class="screenreader">E-Mail</label>
+                            <input id="email" type="text" name="email" placeholder="E-Mail" required pattern="">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="nachricht" class="screenreader">Nachricht</label>
+                            <textarea id="nachricht" name="nachricht" placeholder="Nachricht" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="submit" name="absendenButton">Absenden</button>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
 
         <!--Footer-->
 

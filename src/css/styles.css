@@ -385,7 +385,7 @@ section{
 
 /* Leistungen-Bereich*/
 
-.leistungs-box{
+.leistungs-teaser-box{
     background-color:var(--dunkelGrau);
     text-align: center;
     color: #fff;
@@ -397,17 +397,17 @@ section{
 
 
 
-#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box{
     margin-left: 1rem;
     margin-right: auto;  
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box{
     margin-right: 1rem;
     margin-left: auto;
 }
 
-.leistungs-box >h2{
+.leistungs-teaser-box >h2{
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -442,33 +442,33 @@ section{
 
 @media (max-width: 1336px) {
     
-    .leistungs-box{
+    .leistungs-teaser-box{
         width: 80%;
     }
 }
 
 @media (max-width: 1024px) {
     
-    .leistungs-box{
+    .leistungs-teaser-box{
         width: 100%;
         margin-bottom: .6rem;
     }
 
-    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box{
         margin-left: .5rem;  
     }
     
-    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box{
         margin-right: .5rem;
     }
 }
 
 @media (max-width: 768px) {
-    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box{
+    #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box{
         margin-left: 0rem;  
     }
     
-    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box{
+    #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box{
         margin-right: 0rem;
     }
 
@@ -685,6 +685,173 @@ section{
     #footer span{
         display: none;
     }
+}
+
+/* Leistungen-Seite */
+
+.leistung2{
+    background-color: var(--hellGrau);
+}
+
+.flex-container{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.flex-item > ul{
+    padding: 0;
+}
+
+@media (max-width: 1366px) {
+    .flex-container{
+        width: 90%;
+        
+    }
+}
+
+@media (max-width: 1024px) {
+    .flex-container{
+        width: 100%;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
+
+.flex-container > .intro-container{
+    width: 100%;
+}
+
+.leistungs-box{
+    background-color: var(--dunkelGrau);
+    flex-basis: 25%;
+    color: #fff;
+    padding: 2rem 4rem;
+    text-align: center;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style-position: inside;
+}
+
+.leistungs-box-empfohlen {
+    flex-basis: 27.5%;
+    min-height: 750px;
+    box-shadow: 0 0 20px 0 var(--dunkelGrau);
+    font-size: 1.05rem;
+}
+
+@media (max-width: 1782px) {
+    .leistungs-box{
+        flex-basis:27.5%;
+    
+    }
+    
+    .leistungs-box-empfohlen {
+        flex-basis: 30%;
+    }
+}
+
+@media (max-width: 1622px) {
+    .leistungs-box{
+        flex-basis:30%;
+    
+    }
+    
+    .leistungs-box-empfohlen {
+        flex-basis: 32.5%;
+    }
+}
+
+@media (max-width: 1488px) {
+    .leistungs-box{
+        padding: 1rem 1rem
+    
+    }
+
+    .flex-container{
+        align-items: stretch;
+    }
+    .leistungs-box-empfohlen {
+        min-height: initial;
+    }
+}
+
+@media (max-width: 1088px) {
+    .flex-container{
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+        align-items: center ;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .leistungs-box{
+        padding: 2rem 4rem;
+        margin-bottom: 2rem;
+        min-height: initial;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .flex-container{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 409px) {
+    .leistungs-box{
+        padding: 1rem 2rem;
+    }
+}
+/*
+@media (max-width: 618px) {
+    .leistungs-box{
+        padding: 1rem 2rem;
+    }
+
+    .flex-container{
+        padding: 0;
+    }
+}
+*/
+
+.leistungs-box > h1{
+    margin-bottom:0;
+    margin-top: 1.5rem;
+}
+
+.leistungs-box > ul{
+    padding: 0;
+
+}
+
+.leistungs-box > ul > li{
+    list-style-position: inside;
+    margin-bottom: .5rem;
+}
+
+.leistung-auswählen-btn{    
+    width: 50%;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    min-width: 170px;
+}
+
+.leistung-auswählen-btn:hover{    
+    font-weight: normal;
 }
 
 /* Grid-System (Sichtbarkeit)*/
